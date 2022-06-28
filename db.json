@@ -1,0 +1,238 @@
+{
+  "user": [
+    {
+      "id": "jalo8822",
+      "firstName": "Loïc",
+      "lastName": "Jacques",
+      "role": "admin",
+      "adress": "Rue des Fossés 13 7500 Tournai",
+      "phone": "0472/76.77.74",
+      "mail": "jacques_loic@funkyduck.be",
+      "hireDate": "01-01-2022",
+      "birthDate": "29-08-1988",
+      "password": "admin",
+      "gender": "h"
+    },
+    {
+      "id": "yoem9222",
+      "firstName": "Emma",
+      "lastName": "Yonnaise",
+      "role": "conductor",
+      "adress": "Rue des Plantes 16 1000 Bruxelles",
+      "phone": "0470/12.34.56",
+      "mail": "emma_yonnaise@gmail.com",
+      "hireDate": "01-01-2022",
+      "birthDate": "12-05-1992",
+      "password": "conductor",
+      "gender": "f"
+    },
+    {
+      "id": "desa8522",
+      "firstName": "Sam",
+      "lastName": "Démange",
+      "role": "controller",
+      "adress": "Avenue de Grenoble 145 6000 Charleroi",
+      "phone": "0477/02.20.11",
+      "mail": "s.demange@yahoo.com",
+      "hireDate": "01-01-2022",
+      "birthDate": "02-10-1985",
+      "password": "controller",
+      "gender": "h"
+    }
+  ],
+  "train": [
+    {
+      "id": "sv-101",
+      "constructor": "Siemens",
+      "model": "Velaro",
+      "dateCommissioning": "01-01-2022",
+      "maxSpeed": 320,
+      "maxPassengers": 408
+    },
+    {
+      "id": "sv-102",
+      "constructor": "Siemens",
+      "model": "Velaro",
+      "dateCommissioning": "01-01-2022",
+      "maxSpeed": 320,
+      "maxPassengers": 408
+    },
+    {
+      "id": "sv-103",
+      "constructor": "Siemens",
+      "model": "Velaro",
+      "dateCommissioning": "01-01-2022",
+      "maxSpeed": 320,
+      "maxPassengers": 408
+    },
+    {
+      "id": "sv-104",
+      "constructor": "Siemens",
+      "model": "Velaro",
+      "dateCommissioning": "01-01-2022",
+      "maxSpeed": 320,
+      "maxPassengers": 408
+    },
+    {
+      "id": "sv-105",
+      "constructor": "Siemens",
+      "model": "Velaro",
+      "dateCommissioning": "01-01-2022",
+      "maxSpeed": 320,
+      "maxPassengers": 408
+    },
+    {
+      "id": "aa-201",
+      "constructor": "Alstom",
+      "model": "Avelia",
+      "dateCommissioning": "01-01-2022",
+      "maxSpeed": 320,
+      "maxPassengers": 556
+    },
+    {
+      "id": "aa-202",
+      "constructor": "Alstom",
+      "model": "Avelia",
+      "dateCommissioning": "01-01-2022",
+      "maxSpeed": 320,
+      "maxPassengers": 556
+    },
+    {
+      "id": "aa-203",
+      "constructor": "Alstom",
+      "model": "Avelia",
+      "dateCommissioning": "01-01-2022",
+      "maxSpeed": 320,
+      "maxPassengers": 556
+    },
+    {
+      "id": "aa-204",
+      "constructor": "Alstom",
+      "model": "Avelia",
+      "dateCommissioning": "01-01-2022",
+      "maxSpeed": 320,
+      "maxPassengers": 556
+    },
+    {
+      "id": "aa-205",
+      "constructor": "Alstom",
+      "model": "Avelia",
+      "dateCommissioning": "01-01-2022",
+      "maxSpeed": 320,
+      "maxPassengers": 556
+    }
+  ],
+  "line": [
+    {
+      "id": "hst-01",
+      "name": "LGV Nord-Sud",
+      "maxSpeed": 320,
+      "dateCommissioning": "01-01-2022"
+    },
+    {
+      "id": "hst-02",
+      "name": "LGV Dorsale",
+      "maxSpeed": 320,
+      "dateCommissioning": "01-01-2022"
+    }
+  ],
+  "station": [
+    {
+      "id": 1,
+      "name": "Bruxelles-Midi",
+      "city": "Bruxelles",
+      "dateCommissioning": "01-01-2022",
+      "openAt": "04:30",
+      "closedAt": "01:30"
+    },
+    {
+      "id": 2,
+      "name": "Namur",
+      "city": "Namur",
+      "dateCommissioning": "01-01-2022",
+      "openAt": "04:30",
+      "closedAt": "01:30"
+    },
+    {
+      "id": 3,
+      "name": "Arlon",
+      "city": "Arlon",
+      "dateCommissioning": "01-01-2022",
+      "openAt": "04:30",
+      "closedAt": "01:30"
+    },
+    {
+      "id": 4,
+      "name": "Luxembourg",
+      "city": "Luxembourg",
+      "dateCommissioning": "01-01-2022",
+      "openAt": "04:30",
+      "closedAt": "01:30"
+    },
+    {
+      "id": 5,
+      "name": "Gent-St-Pieter",
+      "city": "Gent",
+      "dateCommissioning": "01-01-2022",
+      "openAt": "04:30",
+      "closedAt": "01:30"
+    },
+    {
+      "id": 6,
+      "name": "Brugge",
+      "city": "Brugge",
+      "dateCommissioning": "01-01-2022",
+      "openAt": "04:30",
+      "closedAt": "01:30"
+    },
+    {
+      "id": 7,
+      "name": "Balnkenberge",
+      "city": "Balnkenberge",
+      "dateCommissioning": "01-01-2022",
+      "openAt": "04:30",
+      "closedAt": "01:30"
+    }
+  ],
+  "lineComposition": [
+    {
+      "line": "hst-01",
+      "station": 4,
+      "position": 1
+    },
+    {
+      "line": "hst-01",
+      "station": 3,
+      "position": 2
+    },
+    {
+      "line": "hst-01",
+      "station": 2,
+      "position": 3
+    },
+    {
+      "line": "hst-01",
+      "station": 1,
+      "position": 4
+    },
+    {
+      "line": "hst-01",
+      "station": 5,
+      "position": 5
+    },
+    {
+      "line": "hst-01",
+      "station": 6,
+      "position": 6
+    },
+    {
+      "line": "hst-01",
+      "station": 7,
+      "position": 7
+    }
+  ],
+  "trainOperation": [],
+  "lineOperation": [],
+  "stationOperation": [],
+  "planning": []
+}

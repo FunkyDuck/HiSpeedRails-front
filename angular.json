@@ -49,10 +49,12 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets/logo.svg",
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+              "src/assets/reset.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -117,10 +119,12 @@
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets/logo.svg",
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+              "src/assets/reset.css",
               "src/styles.scss"
             ],
             "scripts": []

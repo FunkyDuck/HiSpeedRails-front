@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 123.05225,148.60363 c 0,0 349.62819,16.17053 349.62819,190.36695 -92.0109,35.2496 -175.88262,24.19854 -270.58338,24.40926 m -50.29889,-0.27976 c -10.64931,-0.11409 -21.39153,-0.27025 -32.47861,-0.48918"
+       id="path857" />
+    <path
+       id="path1117"
+       style="fill:none;stroke:#000000;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 325.99991,396 H 486.80437" />
+    <path
+       id="path24149"
+       style="fill:none;stroke:#000000;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 25.19563,396 H 186.00008" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:96px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Semi-Condensed';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="194.01932"
+       y="346.53906"
+       id="text1751"
+       transform="skewX(-22.5)"><tspan
+         id="tspan1749"
+         x="194.01932"
+         y="346.53906">HiSpeed</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:37.7123px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.707107"
+       x="144.4671"
+       y="573.2868"
+       id="text17453"
+       transform="scale(1.4142136,0.70710678)"><tspan
+         id="tspan17451"
+         x="144.4671"
+         y="573.2868"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-condensed;font-size:37.7123px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold Semi-Condensed';stroke-width:0.707107">Rails</tspan></text>
+  </g>
+</svg>
