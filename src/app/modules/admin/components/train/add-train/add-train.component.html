@@ -1,0 +1,35 @@
+<form [formGroup]="trainForm">
+    <h2>New train</h2>
+
+    <div>
+        <label for="id">ID</label>
+        <input type="text" name="id" id="id" formControlName="id">
+    </div>
+
+    <div>
+        <label for="tconstructor">Constructor</label>
+        <input type="text" name="tconstructor" id="tconstructor" formControlName="tconstructor">
+    </div>
+
+    <div>
+        <label for="model">Model</label>
+        <input type="text" name="model" id="model" formControlName="model">
+    </div>
+
+    <div>
+        <label for="dateCommissioning">Date Commissioning</label>
+        <input type="date" name="dateCommissioning" id="dateCommissioning" formControlName="dateCommissioning">
+    </div>
+
+    <div>
+        <label for="maxSpeed">Max Speed</label>
+        <input type="number" name="maxSpeed" id="maxSpeed" formControlName="maxSpeed">
+    </div>
+
+    <div>
+        <label for="maxPassengers">Max passengers</label>
+        <input type="number" name="maxPassengers" id="maxPassengers" formControlName="maxPassengers">
+    </div>
+
+    <button (click)="addTrain()">Tchoo Tchoo</button>
+</form>

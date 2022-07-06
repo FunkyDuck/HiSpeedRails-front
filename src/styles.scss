@@ -1,7 +1,40 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$HiSpeedPlanner-primary: mat.define-palette(mat.$indigo-palette);
+$HiSpeedPlanner-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$HiSpeedPlanner-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$HiSpeedPlanner-theme: mat.define-light-theme((color: (primary: $HiSpeedPlanner-primary,
+        accent: $HiSpeedPlanner-accent,
+        warn: $HiSpeedPlanner-warn,
+      )));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($HiSpeedPlanner-theme);
+
 /* You can add global styles to this file, and also import other style files */
 
 // Colors vars
 $primary: #2471a3;
+$secondary: #7fb3d5;
+$tertiary: #a9cce3;
 $black: #000000;
 $white: #ffffff;
 
@@ -16,7 +49,7 @@ nav {
   height: 10vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 nav a {
@@ -25,11 +58,11 @@ nav a {
   margin: 2vh 2vw 1vh 1vw;
   font-size: 2.5vh;
   line-height: 7vh;
+  margin-top: -2vh;
 }
 
 nav a img {
-  height: 10vh;
-  margin: -2vh 1vw;
+  height: 14vh;
 }
 
 main {
@@ -43,7 +76,7 @@ h1 {
 
 form {
   width: 80vw;
-  height: 50vh;
+  min-height: 50vh;
   border: $primary 1px solid;
   border-radius: 24px;
   padding: 2vh 2vw;
@@ -53,6 +86,11 @@ form {
   display: flex;
   flex-direction: column;
   color: $primary;
+}
+
+section form {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 form div {
@@ -78,8 +116,99 @@ form button {
   padding: 0.5vh;
 }
 
+section#mainMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+section#mainMenu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  border: $primary 2px solid;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+  width: 25vw;
+  border-radius: 12px;
+}
+
+section.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+section.buttonGroup a {
+  background: $primary;
+  color: $white;
+  padding: 0.5vh 2vw;
+  margin: 1vh 1px;
+  text-decoration: none;
+  line-height: 1.5rem;
+  display: inline-block;
+  // font-size: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+section.buttonGroup a:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+section.buttonGroup a:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+section.buttonGroup:visited {
+  color: $white;
+}
+
+a:visited {
+  color: $primary;
+}
+
 @media screen AND (min-width: 801px) {
+  main#listing {
+    flex-direction: row;
+  }
+
   form {
     width: 50vw;
+  }
+
+  .displayTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  table {
+    width: 40vw;
+    margin: auto;
+  }
+
+  tr {
+    text-align: start;
+    background: $secondary;
+  }
+
+  td {
+    padding: 0.25vh 0.5vw;
+  }
+
+  tr:first-child {
+    font-weight: bold;
+    // width: 33%;
+    text-align: center;
+    color: $primary;
+    border-bottom: $primary 1px solid;
+  }
+
+  tr:nth-child(2n) {
+    background: $tertiary;
   }
 }

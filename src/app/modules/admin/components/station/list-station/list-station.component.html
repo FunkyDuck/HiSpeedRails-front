@@ -1,0 +1,26 @@
+<div class="displayTwo">
+    <section>
+        <table>
+            <tr>
+                <th>City</th>
+                <th>Name</th>
+                <th>Date Commissioning</th>
+                <th>Open AT</th>
+                <th>Closed At</th>
+            </tr>
+
+            <tr *ngFor="let s of stations">
+                <td><a routerLink="./view/{{s?.id}}">{{s?.city}}</a></td>
+                <td><a routerLink="./view/{{s?.id}}">{{s?.name}}</a></td>
+                <td><a routerLink="./view/{{s?.id}}">{{s?.dateCommissioning}}</a></td>
+                <td><a routerLink="./view/{{s?.id}}">{{s?.openAt}}</a></td>
+                <td><a routerLink="./view/{{s?.id}}">{{s?.closedAt}}</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <!-- <mat-icon>playlist_add</mat-icon> Add station -->
+        <app-add-station></app-add-station>
+    </section>
+</div>

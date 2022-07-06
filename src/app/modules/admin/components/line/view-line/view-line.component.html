@@ -1,0 +1,34 @@
+<h2></h2>
+<table>
+    <thead>
+        <tr>
+            <th>{{line?.name}} | {{line?.id}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Date Commissioning</td>
+            <td>{{line?.dateCommissioning}}</td>
+        </tr>
+
+        <tr>
+            <td>Max Speed</td>
+            <td>{{line?.maxSpeed}}</td>
+        </tr>
+    </tbody>
+
+    <thead>
+        <tr>
+            <th>Position</th>
+            <th>Station city</th>
+            <th>Station name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of lineToStation">
+            <td><a routerLink="../../../station/view/{{s?.station}}">{{s?.position}}</a></td>
+            <td><a routerLink="../../../station/view/{{s?.station}}">{{s?.stationCity}}</a></td>
+            <td><a routerLink="../../../station/view/{{s?.station}}">{{s?.stationName}}</a></td>
+        </tr>
+    </tbody>
+</table>

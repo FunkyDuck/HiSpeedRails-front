@@ -1,0 +1,51 @@
+<div class="displayTwo">
+    <h2></h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>{{station?.city}} | {{station?.name}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Date Commissioning</td>
+                <td>{{station?.dateCommissioning}}</td>
+            </tr>
+
+            <tr>
+                <td>Open At</td>
+                <td>Closed At</td>
+            </tr>
+
+            <tr>
+                <td>{{station?.openAt}}</td>
+                <td>{{station?.closedAt}}</td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>Line id</th>
+                <th>Line Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let l of lineToStation">
+                <td>{{l?.line}}</td>
+                <td>{{l?.lineName}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form [formGroup]="formLineToStation">
+        <label for="line">Line</label>
+        <select name="line" id="line" formControlName="line">
+            <option *ngFor="let l of lines" value="{{l?.id}}">{{l?.name}}</option>
+        </select>
+
+        <label for="position">Position on line</label>
+        <input type="number" name="position" id="position" formControlName="position">
+        <button (click)="addStation()">Add station to Line</button>
+    </form>
+</div>

@@ -38,12 +38,51 @@
       "birthDate": "02-10-1985",
       "password": "controller",
       "gender": "h"
+    },
+    {
+      "id": "paar5822",
+      "firstName": "Paul",
+      "lastName": "Aroïde",
+      "adress": "Avenue des arts 35 4000 Liège",
+      "mail": "p.aroide@gmail.com",
+      "phone": "0470/01.47.89",
+      "birthDate": "1958-09-07",
+      "hireDate": "2022-01-01",
+      "role": "controller",
+      "gender": "x",
+      "password": "controller"
+    },
+    {
+      "id": "albe8422",
+      "firstName": "Ali",
+      "lastName": "Bellule",
+      "adress": "Place de l'étang 17 1000 Bruxelles",
+      "mail": "ali.b@hotmail.com",
+      "phone": "0477/98.87.76",
+      "birthDate": "1984-07-16",
+      "hireDate": "0022-01-01",
+      "role": "conductor",
+      "gender": "h",
+      "password": "conductor"
+    },
+    {
+      "id": "rotr7422",
+      "firstName": "Roger",
+      "lastName": "Trobu",
+      "adress": "Rue des bistrots 15, 7000 Mons",
+      "mail": "ledomainederoger@yahoo.fr",
+      "phone": "0474/98.87.77",
+      "birthDate": "1974-04-14",
+      "hireDate": "2022-02-15",
+      "role": "controller",
+      "gender": "h",
+      "password": "controller"
     }
   ],
   "train": [
     {
       "id": "sv-101",
-      "constructor": "Siemens",
+      "tconstructor": "Siemens",
       "model": "Velaro",
       "dateCommissioning": "01-01-2022",
       "maxSpeed": 320,
@@ -51,7 +90,7 @@
     },
     {
       "id": "sv-102",
-      "constructor": "Siemens",
+      "tconstructor": "Siemens",
       "model": "Velaro",
       "dateCommissioning": "01-01-2022",
       "maxSpeed": 320,
@@ -59,7 +98,7 @@
     },
     {
       "id": "sv-103",
-      "constructor": "Siemens",
+      "tconstructor": "Siemens",
       "model": "Velaro",
       "dateCommissioning": "01-01-2022",
       "maxSpeed": 320,
@@ -67,7 +106,7 @@
     },
     {
       "id": "sv-104",
-      "constructor": "Siemens",
+      "tconstructor": "Siemens",
       "model": "Velaro",
       "dateCommissioning": "01-01-2022",
       "maxSpeed": 320,
@@ -75,7 +114,7 @@
     },
     {
       "id": "sv-105",
-      "constructor": "Siemens",
+      "tconstructor": "Siemens",
       "model": "Velaro",
       "dateCommissioning": "01-01-2022",
       "maxSpeed": 320,
@@ -83,7 +122,7 @@
     },
     {
       "id": "aa-201",
-      "constructor": "Alstom",
+      "tconstructor": "Alstom",
       "model": "Avelia",
       "dateCommissioning": "01-01-2022",
       "maxSpeed": 320,
@@ -91,7 +130,7 @@
     },
     {
       "id": "aa-202",
-      "constructor": "Alstom",
+      "tconstructor": "Alstom",
       "model": "Avelia",
       "dateCommissioning": "01-01-2022",
       "maxSpeed": 320,
@@ -99,7 +138,7 @@
     },
     {
       "id": "aa-203",
-      "constructor": "Alstom",
+      "tconstructor": "Alstom",
       "model": "Avelia",
       "dateCommissioning": "01-01-2022",
       "maxSpeed": 320,
@@ -107,7 +146,7 @@
     },
     {
       "id": "aa-204",
-      "constructor": "Alstom",
+      "tconstructor": "Alstom",
       "model": "Avelia",
       "dateCommissioning": "01-01-2022",
       "maxSpeed": 320,
@@ -115,11 +154,67 @@
     },
     {
       "id": "aa-205",
-      "constructor": "Alstom",
+      "tconstructor": "Alstom",
       "model": "Avelia",
       "dateCommissioning": "01-01-2022",
       "maxSpeed": 320,
       "maxPassengers": 556
+    },
+    {
+      "id": "co-301",
+      "tconstructor": "CAF",
+      "model": "Oaris Flytoget",
+      "dateCommissioning": "2022-02-15",
+      "maxSpeed": 245,
+      "maxPassengers": 248
+    },
+    {
+      "id": "co-302",
+      "tconstructor": "CAF",
+      "model": "Oaris Flytoget",
+      "dateCommissioning": "2022-02-15",
+      "maxSpeed": 245,
+      "maxPassengers": 248
+    },
+    {
+      "id": "co-303",
+      "tconstructor": "CAF",
+      "model": "Oaris Flytoget",
+      "dateCommissioning": "2022-02-15",
+      "maxSpeed": 245,
+      "maxPassengers": 248
+    },
+    {
+      "id": "co-304",
+      "tconstructor": "CAF",
+      "model": "Oaris Flytoget",
+      "dateCommissioning": "2022-02-15",
+      "maxSpeed": 245,
+      "maxPassengers": 248
+    },
+    {
+      "id": "co-305",
+      "tconstructor": "CAF",
+      "model": "Oaris Flytoget",
+      "dateCommissioning": "2022-02-15",
+      "maxSpeed": 245,
+      "maxPassengers": 248
+    },
+    {
+      "id": "co-306",
+      "tconstructor": "CAF",
+      "model": "Oaris Flytoget",
+      "dateCommissioning": "2022-02-15",
+      "maxSpeed": 245,
+      "maxPassengers": 248
+    },
+    {
+      "id": "co-307",
+      "tconstructor": "CAF",
+      "model": "Oaris Flytoget",
+      "dateCommissioning": "2022-02-15",
+      "maxSpeed": 245,
+      "maxPassengers": 248
     }
   ],
   "line": [
@@ -134,6 +229,12 @@
       "name": "LGV Dorsale",
       "maxSpeed": 320,
       "dateCommissioning": "01-01-2022"
+    },
+    {
+      "id": "hst-03",
+      "name": "Paris - Amsterdam",
+      "dateCommissioning": "2022-02-15",
+      "maxSpeed": 320
     }
   ],
   "station": [
@@ -187,15 +288,88 @@
     },
     {
       "id": 7,
-      "name": "Balnkenberge",
-      "city": "Balnkenberge",
+      "name": "Blankenberge",
+      "city": "Blankenberge",
       "dateCommissioning": "01-01-2022",
       "openAt": "04:30",
       "closedAt": "01:30"
+    },
+    {
+      "name": "Tournai",
+      "city": "Tournai",
+      "dateCommissioning": "2022-02-15",
+      "openAt": "05:30",
+      "closedAt": "22:00",
+      "id": 8
+    },
+    {
+      "name": "Mons",
+      "city": "Mons",
+      "dateCommissioning": "2022-02-15",
+      "openAt": "05:30",
+      "closedAt": "22:00",
+      "id": 9
+    },
+    {
+      "name": "Charleroi-Sud",
+      "city": "Charleroi",
+      "dateCommissioning": "2022-02-15",
+      "openAt": "05:30",
+      "closedAt": "22:00",
+      "id": 10
+    },
+    {
+      "name": "Huy",
+      "city": "Huy",
+      "dateCommissioning": "2022-02-15",
+      "openAt": "05:30",
+      "closedAt": "22:00",
+      "id": 11
+    },
+    {
+      "name": "Liège-Guillemins",
+      "city": "Liège",
+      "dateCommissioning": "2022-02-15",
+      "openAt": "04:30",
+      "closedAt": "01:30",
+      "id": 12
+    },
+    {
+      "name": "Paris-Nord",
+      "city": "Paris",
+      "dateCommissioning": "2022-04-15",
+      "openAt": "04:00",
+      "closedAt": "10:00",
+      "id": 13
+    },
+    {
+      "name": "Antwerpren-Centraal",
+      "city": "Antwerpen",
+      "dateCommissioning": "2022-04-15",
+      "openAt": "04:30",
+      "closedAt": "01:00",
+      "id": 14
+    },
+    {
+      "name": "Rotterdam CS",
+      "city": "Rotterdam",
+      "dateCommissioning": "2022-04-15",
+      "openAt": "04:00",
+      "closedAt": "01:00",
+      "id": 15
+    },
+    {
+      "name": "Amsterdam CS",
+      "city": "Amsterdam",
+      "dateCommissioning": "2022-04-15",
+      "openAt": "04:00",
+      "closedAt": "01:00",
+      "id": 16
     }
   ],
   "lineComposition": [
     {
+      "id": 1,
       "line": "hst-01",
       "station": 4,
       "position": 1
@@ -229,6 +403,66 @@
       "line": "hst-01",
       "station": 7,
       "position": 7
+    },
+    {
+      "line": "hst-02",
+      "station": 8,
+      "position": 1
+    },
+    {
+      "line": "hst-02",
+      "station": 9,
+      "position": 2
+    },
+    {
+      "line": "hst-02",
+      "station": 10,
+      "position": 3
+    },
+    {
+      "line": "hst-02",
+      "station": 2,
+      "position": 4
+    },
+    {
+      "line": "hst-02",
+      "station": 11,
+      "position": 5
+    },
+    {
+      "line": "hst-02",
+      "station": 12,
+      "position": 6
+    },
+    {
+      "line": "hst-03",
+      "station": 13,
+      "position": 1,
+      "id": 2
+    },
+    {
+      "line": "hst-03",
+      "station": 1,
+      "position": 2,
+      "id": 3
+    },
+    {
+      "line": "hst-03",
+      "station": 14,
+      "position": 3,
+      "id": 4
+    },
+    {
+      "line": "hst-03",
+      "station": 15,
+      "position": 4,
+      "id": 5
+    },
+    {
+      "line": "hst-03",
+      "station": 16,
+      "position": 5,
+      "id": 6
     }
   ],
   "trainOperation": [],

@@ -1,0 +1,23 @@
+<div class="displayTwo">
+    <section>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Role</th>
+            </tr>
+            <tr *ngFor="let u of users">
+                <td><a routerLink="./view/{{u.id}}">{{u.id}}</a></td>
+                <td><a routerLink="./view/{{u.id}}">{{u.firstName}}</a></td>
+                <td><a routerLink="./view/{{u.id}}">{{u.lastName}}</a></td>
+                <td><a routerLink="./view/{{u.id}}">{{u.role}}</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <!-- <mat-icon>person_add</mat-icon> Add user -->
+        <app-add-user></app-add-user>
+    </section>
+</div>

@@ -1,0 +1,26 @@
+<div class="displayTwo">
+    <section>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Constructor</th>
+                <th>Model</th>
+                <th>Max Speed</th>
+                <th>Max Passengers</th>
+            </tr>
+
+            <tr *ngFor="let t of trains">
+                <td><a routerLink="./view/{{t?.id}}">{{t?.id}}</a></td>
+                <td><a routerLink="./view/{{t?.id}}">{{t?.tconstructor}}</a></td>
+                <td><a routerLink="./view/{{t?.id}}">{{t?.model}}</a></td>
+                <td><a routerLink="./view/{{t?.id}}">{{t?.maxSpeed}}</a></td>
+                <td><a routerLink="./view/{{t?.id}}">{{t?.maxPassengers}}</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <!-- <mat-icon>playlist_add</mat-icon> Add train -->
+        <app-add-train></app-add-train>
+    </section>
+</div>

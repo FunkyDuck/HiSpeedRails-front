@@ -1,0 +1,24 @@
+<div class="displayTwo">
+    <section>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Max Speed</th>
+                <th>Date Commissioning</th>
+            </tr>
+
+            <tr *ngFor="let l of lines">
+                <td><a routerLink="./view/{{l?.id}}">{{l?.id}}</a></td>
+                <td><a routerLink="./view/{{l?.id}}">{{l?.name}}</a></td>
+                <td><a routerLink="./view/{{l?.id}}">{{l?.maxSpeed}}</a></td>
+                <td><a routerLink="./view/{{l?.id}}">{{l?.dateCommissioning}}</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <!-- <mat-icon>playlist_add</mat-icon> Add line -->
+        <app-add-line></app-add-line>
+    </section>
+</div>

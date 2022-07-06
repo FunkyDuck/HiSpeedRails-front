@@ -1,14 +1,15 @@
 <main>
-    <form>
+    <form [formGroup]="loginForm">
         <h1>Login</h1>
         <div>
             <label for="user">User Id</label>
-            <input type="text" name="user" id="user" placeholder="ex: usid8822" required>
+            <input type="text" name="user" id="user" placeholder="ex: usid8822" formControlName="id" required>
         </div>
 
         <div>
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="password" required>
+            <input type="password" name="password" id="password" placeholder="password" formControlName="password"
+                required>
         </div>
 
         <button (click)="connection()">Log me In</button>

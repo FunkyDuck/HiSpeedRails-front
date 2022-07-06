@@ -1,0 +1,35 @@
+<form [formGroup]="stationForm">
+    <h2>New Station</h2>
+
+    <!-- <div>
+        <label for="id">ID</label>
+        <input type="text" name="id" id="id" formControlName="id">
+    </div> -->
+
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" formControlName="name">
+    </div>
+
+    <div>
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" formControlName="city">
+    </div>
+
+    <div>
+        <label for="dateCommissioning">Date Commissioning</label>
+        <input type="date" name="dateCommissioning" id="dateCommissioning" formControlName="dateCommissioning">
+    </div>
+
+    <div>
+        <label for="openAt">Open At</label>
+        <input type="time" name="openAt" id="openAt" formControlName="openAt">
+    </div>
+
+    <div>
+        <label for="closedAt">Closed At</label>
+        <input type="time" name="closedAt" id="closedAt" formControlName="closedAt">
+    </div>
+
+    <button (click)="addStation()">Tchoo Tchoo</button>
+</form>

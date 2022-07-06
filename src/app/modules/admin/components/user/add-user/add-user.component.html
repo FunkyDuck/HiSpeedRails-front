@@ -1,0 +1,57 @@
+<form [formGroup]="userForm">
+    <h2>Add new user</h2>
+    <div>
+        <label for="firstName">FirstName</label>
+        <input type="text" name="firstName" id="firstName" formControlName="firstName" value="Paul">
+    </div>
+
+    <div>
+        <label for="lastName">LastName</label>
+        <input type="text" name="lastName" id="lastName" formControlName="lastName" value="Aroïde">
+    </div>
+
+    <div>
+        <label for="adress">Adress</label>
+        <input type="text" name="adress" id="adress" formControlName="adress" value="Rue des arts 23, 4000 Liège">
+    </div>
+
+    <div>
+        <label for="mail">Mail</label>
+        <input type="text" name="mail" id="mail" formControlName="mail" value="p.aroide@gmail.com">
+    </div>
+
+    <div>
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" formControlName="phone" value="0470/01.23.45">
+    </div>
+
+    <div>
+        <label for="birthDate">Birth Date</label>
+        <input type="date" name="birthDate" id="birthDate" formControlName="birthDate">
+    </div>
+
+    <div>
+        <label for="hireDate">Hire Date</label>
+        <input type="date" name="hireDate" id="hireDate" formControlName="hireDate">
+    </div>
+
+    <div>
+        <label for="role">Role</label>
+        <select name="role" id="role" formControlName="role">
+            <option value="controller">Controller</option>
+            <option value="conductor">Conductor</option>
+            <option value="admin">Admin</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender" formControlName="gender">
+            <option value="h">Male</option>
+            <option value="f">Female</option>
+            <option value="x">Other</option>
+        </select>
+    </div>
+
+    <button (click)="sendUser()">Add user</button>
+</form>

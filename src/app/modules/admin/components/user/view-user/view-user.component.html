@@ -1,0 +1,42 @@
+<h2></h2>
+<table>
+    <thead>
+        <tr>
+            <th>{{user?.firstName}} {{user?.lastName}}</th>
+            <th>{{user?.role | titlecase}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Phone</td>
+            <td>{{user?.phone}}</td>
+        </tr>
+
+        <tr>
+            <td>Mail</td>
+            <td>{{user?.mail}}</td>
+        </tr>
+
+        <tr>
+            <td>Adress</td>
+            <td>{{user?.adress}}</td>
+        </tr>
+
+        <tr>
+            <td>Birthdate</td>
+            <td>{{user?.birthDate}}</td>
+        </tr>
+
+        <tr>
+            <td>Hire date</td>
+            <td>{{user?.hireDate}}</td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td *ngIf="user?.gender == 'h'">Man</td>
+            <td *ngIf="user?.gender == 'f'">Woman</td>
+            <td *ngIf="user?.gender == 'x'">Other</td>
+        </tr>
+    </tbody>
+</table>
